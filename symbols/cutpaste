@@ -1,0 +1,51 @@
+default partial xkb_symbols "superversions" {
+    replace key <AB01> {
+        type= "ALPHABETIC_SUPER",
+        symbols[Group1]= [               z,               Z ],
+        actions[Group1]= [      NoAction(),      NoAction(), RedirectKey(key=<LatZ>,mods=Control,clearmods=Super)],
+        symbols[Group2]= [     Cyrillic_ya,     Cyrillic_YA ],
+        actions[Group2]= [      NoAction(),      NoAction(), RedirectKey(key=<LatZ>,mods=Control,clearmods=Super)],
+        symbols[Group3]= [               z,               Z ]
+    };
+    replace key <AB02> {
+        type= "ALPHABETIC_SUPER",
+        symbols[Group1]= [               x,               X ],
+        actions[Group1]= [      NoAction(),      NoAction(), RedirectKey(key=<LatX>,mods=Control,clearmods=Super)],
+        symbols[Group2]= [    Cyrillic_che,    Cyrillic_CHE ],
+        actions[Group2]= [      NoAction(),      NoAction(), RedirectKey(key=<LatX>,mods=Control,clearmods=Super)],
+        symbols[Group3]= [               x,               X ]
+    };
+    replace key <AB03> {
+        type= "ALPHABETIC_SUPER",
+        symbols[Group1]= [               c,               C ],
+        actions[Group1]= [      NoAction(),      NoAction(), RedirectKey(key=<LatC>,mods=Control,clearmods=Super)],
+        symbols[Group2]= [     Cyrillic_es,     Cyrillic_ES ],
+        actions[Group2]= [      NoAction(),      NoAction(), RedirectKey(key=<LatC>,mods=Control,clearmods=Super)],
+        symbols[Group3]= [               c,               C ]
+    };
+    replace key <AB04> {
+        type= "ALPHABETIC_SUPER",
+        symbols[Group1]= [               v,               V ],
+        actions[Group1]= [      NoAction(),      NoAction(), RedirectKey(key=<LatV>,mods=Control,clearmods=Super)],
+        symbols[Group2]= [     Cyrillic_em,     Cyrillic_EM ],
+        actions[Group2]= [      NoAction(),      NoAction(), RedirectKey(key=<LatV>,mods=Control,clearmods=Super)],
+        symbols[Group3]= [               v,               V ]
+    };
+    replace key <AC02> {
+        type= "ALPHABETIC_SUPER",
+        symbols[Group1]= [               s,               S ],
+        actions[Group1]= [      NoAction(),      NoAction(), RedirectKey(key=<LatS>,mods=Control,clearmods=Super)],
+        symbols[Group2]= [   Cyrillic_yeru,   Cyrillic_YERU ],
+        actions[Group2]= [      NoAction(),      NoAction(), RedirectKey(key=<LatS>,mods=Control,clearmods=Super)],
+        symbols[Group3]= [               s,               S ]
+    };
+    replace key <AC04> {
+        type= "ALPHABETIC_SUPER",
+        symbols[Group1]= [               f,               F ],
+        actions[Group1]= [      NoAction(),      NoAction(), RedirectKey(key=<LatF>,mods=Control,clearmods=Super)],
+        symbols[Group2]= [      Cyrillic_a,      Cyrillic_A ],
+        actions[Group2]= [      NoAction(),      NoAction(), RedirectKey(key=<LatF>,mods=Control,clearmods=Super)],
+        symbols[Group3]= [               f,               F ]
+    };
+
+};
